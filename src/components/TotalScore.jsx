@@ -1,0 +1,22 @@
+import styled from "styled-components"
+const TotalScore = ({score})=>{
+    return(
+       <ScoreContainer>
+        <h1>{score}</h1>
+        <p1> Total Score</p1>
+       </ScoreContainer>
+    );
+};
+export default TotalScore;
+const ScoreContainer = styled.div`
+   max-width: 200px;
+   text-align: center;
+  h1{
+    font-size: 100px;
+    line-height: 100px;
+  }  
+  p1{
+   font-size: 24x;
+   font-weight: 500px;
+  }
+`;
